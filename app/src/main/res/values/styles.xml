@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="contactImageStyle">
+        <item name="android:layout_width">@dimen/contact_image_width</item>
+        <item name="android:layout_height">@dimen/contact_image_height</item>
+        <item name="android:layout_margin">@dimen/contact_image_margin</item>
+    </style>
+
+    <style name="nameLabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/name_label_margin_start</item>
+        <item name="android:textColor">@color/name_label_text_color</item>
+        <item name="android:textSize">@dimen/name_label_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="phoneLabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/phone_label_margin_top</item>
+        <item name="android:layout_marginEnd">@dimen/phone_label_margin_end</item>
+        <item name="android:textSize">@dimen/phone_label_text_size</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="profile_image_style">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+    </style>
+
+    <style name="contactDetailsNameStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="contactDetailsPhoneStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="contactDetailsPhoneTypeStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/phone_type_content_label</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="contactDetailsImageLabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="contactDetailsEmailStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="editButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

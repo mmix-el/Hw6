@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_image_width">80dp</dimen>
+    <dimen name="contact_image_height">80dp</dimen>
+    <dimen name="contact_image_margin">8dp</dimen>
+    <dimen name="name_label_margin_start">4dp</dimen>
+    <dimen name="name_label_margin_top">16dp</dimen>
+    <dimen name="name_label_text_size">18sp</dimen>
+    <dimen name="phone_label_margin_top">4dp</dimen>
+    <dimen name="phone_label_margin_end">8dp</dimen>
+    <dimen name="phone_label_text_size">16sp</dimen>
+    <dimen name="list_item_margin">8dp</dimen>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                style="@style/profile_image_style"
+                android:src="@drawable/photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textHint"
+                style="@style/contactDetailsImageLabelStyle"
+                android:layout_marginTop="8dp"
+                android:text="@string/image_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                style="@style/contactDetailsNameStyle"
+                android:layout_marginTop="32dp"
+                android:autofillHints="name"
+                android:hint="@string/name_hint"
+                app:layout_constraintEnd_toStartOf="@+id/surnameEditText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textHint" />
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                style="@style/contactDetailsNameStyle"
+                android:autofillHints="surname"
+                android:hint="@string/surname_hint"
+                app:layout_constraintBaseline_toBaselineOf="@+id/nameEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/nameEditText" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                style="@style/contactDetailsPhoneStyle"
+                android:layout_marginTop="32dp"
+                android:autofillHints="phone number"
+                android:hint="@string/phone_number_hint"
+                app:layout_constraintEnd_toEndOf="@+id/surnameEditText"
+                app:layout_constraintStart_toStartOf="@+id/nameEditText"
+                app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                style="@style/contactDetailsEmailStyle"
+                android:layout_marginTop="32dp"
+                android:autofillHints="email"
+                android:hint="@string/email_hint"
+                app:layout_constraintEnd_toEndOf="@+id/surnameEditText"
+                app:layout_constraintStart_toStartOf="@+id/phoneEditText"
+                app:layout_constraintTop_toBottomOf="@+id/phoneEditText" />
+
+            <Button
+                android:id="@+id/editButton"
+                style="@style/editButtonStyle"
+                android:text="@string/update_button_label"
+                app:layout_constraintEnd_toEndOf="@+id/emailEditText"
+                app:layout_constraintStart_toStartOf="@+id/emailEditText"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
