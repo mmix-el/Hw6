@@ -37,9 +37,7 @@ interface ContactActionListener {
     fun onContactLongClick(contact: Contact)
 }
 
-class ContactsAdapter(
-    private val contactListener: ContactActionListener
-) :
+class ContactsAdapter(private val contactListener: ContactActionListener) :
     RecyclerView.Adapter<ContactsAdapter.ContactViewHolder>() {
     var contacts = emptyList<Contact>()
         set(newList) {

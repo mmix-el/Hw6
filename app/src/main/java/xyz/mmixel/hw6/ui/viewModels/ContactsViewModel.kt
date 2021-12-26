@@ -37,7 +37,7 @@ class ContactsViewModel(
 
     fun filterContacts(query: String?): List<Contact> {
         return contacts.value?.let { contactsList ->
-            if (query == null || query.isEmpty()) {
+            if (query.isNullOrEmpty()) {
                 contactsList
             } else {
                 val pattern = query.lowercase().trim()

@@ -9,12 +9,11 @@ import xyz.mmixel.hw6.ui.fragments.ContactsFragment
 
 class MainActivity : AppCompatActivity(), ContactsFragment.ContactClickListener,
     ContactDetailsFragment.EditButtonClickListener {
-    private var isTablet = false
+    private val isTablet by lazy { resources.getBoolean(R.bool.isTablet) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        isTablet = resources.getBoolean(R.bool.isTablet)
 
         if (supportFragmentManager.findFragmentByTag(ContactsFragment.CONTACTS_TAG) == null) {
             supportFragmentManager.beginTransaction().run {
